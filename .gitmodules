@@ -1,0 +1,3 @@
+[submodule "external/CrHeader"]
+	path = external/CrHeader
+	url = git@github.com:Croyfet/CrHeader.git
