@@ -10,7 +10,7 @@ namespace cc
 		
 		CcResult INSPECT_HONMODEL_CONFIG(HONMODEL OnModel)
 		{
-			if (OnModel == nullptr)return CcResult::FAILED_ARG_NOT_INITIALIZED;
+			if (OnModel == nullptr)return CcResult::FAILED_ARG_HANDLE_NOT_INITIALIZED;
 			else
 			{
 				PRIVATE_HANDLE_ONMODEL* pOnModel = (PRIVATE_HANDLE_ONMODEL*)OnModel;
@@ -46,7 +46,7 @@ namespace cc
 
 		CcResult INSPECT_HONMODEL(HONMODEL OnModel)
 		{
-			if (OnModel == nullptr)return CcResult::FAILED_ARG_NOT_INITIALIZED;
+			if (OnModel == nullptr)return CcResult::FAILED_ARG_HANDLE_NOT_INITIALIZED;
 			else
 			{
 				PRIVATE_HANDLE_ONMODEL* pOnModel = (PRIVATE_HANDLE_ONMODEL*)OnModel;
@@ -57,13 +57,13 @@ namespace cc
 
 		CcResult INSPECT_HONMODEL_LITE(HONMODEL OnModel)
 		{
-			if (OnModel == nullptr)return CcResult::FAILED_ARG_NOT_INITIALIZED;
+			if (OnModel == nullptr)return CcResult::FAILED_ARG_HANDLE_NOT_INITIALIZED;
 			else
 			{
 				PRIVATE_HANDLE_ONMODEL* pOnModel = (PRIVATE_HANDLE_ONMODEL*)OnModel;
 
-				if (pOnModel->spin == nullptr)return CcResult::FAILED_ARG_NOT_INITIALIZED;
-				if (pOnModel->spinaddr == nullptr)return CcResult::FAILED_ARG_NOT_INITIALIZED;
+				if (pOnModel->spin == nullptr)return CcResult::FAILED_ARG_HANDLE_NOT_INITIALIZED;
+				if (pOnModel->spinaddr == nullptr)return CcResult::FAILED_ARG_HANDLE_NOT_INITIALIZED;
 			}
 
 			return CcResult::SUCCESS;
