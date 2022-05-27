@@ -72,15 +72,15 @@ See sample for details.
 
 	```C++
 	cc::onm::ONM_STATUS os;
-	cc::onm::ONM_get_status(on, &os);
+	cc::onm::ONM_get_status(hOnm, &os);
 	std::printf("Energy : %lf Magnetization : %lf\r\n", os.E_Energy, os.M_Magnetization.z);
 	```
 
 4. Free
 
 	```C++
-	cc::onm::ONM_free(on);
-	on = nullptr;
+	cc::onm::ONM_free(hOnm);
+	hOnm = nullptr;
 	```
 
 ---
