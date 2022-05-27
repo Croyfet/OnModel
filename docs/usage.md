@@ -20,7 +20,7 @@
 
 ## code
 
-See sample for details.
+See sample for details. [OnModel/Sample](https://github.com/Croyfet/OnModel/tree/main/sample)
 
 1. Initialize `HONMODEL` handle by `ONMODEL_CONFIG` struct.
 
